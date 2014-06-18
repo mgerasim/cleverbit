@@ -1,0 +1,79 @@
+html { height: 100%; font-family: Homebook;} 
+body {background-color: #f5f5f5;padding: 0;margin: 0;height: 100%; font-family: Homebook;}
+.clearfix {height 1px; clear: both;}
+@font-face {
+    font-family: Homebook;
+    src: url(../fonts/PFHandbookPro-Light.otf);
+}
+
+/* HEADER STYLE */
+header {height: 125px; border-top: 5px solid #b25e51; width: 100%;position: fixed;top: 0;background-color: #f5f5f5;z-index: 1000;}
+#mainheader {height: 55px; width: 960px; padding-top: 70px; margin: 0 auto; border-bottom: 1px solid #e1e1e1;}
+#logo {float: left; width: 480px;}
+#topmenu {float: right; width: 480px;}
+#topmenu ul{float: right;margin: 0; padding: 0;}
+#topmenu ul li {float: left; list-style: none; margin: 0px 15px; font-size: 22px; color: #a83624; border: 0;}
+#topmenu a {color: #a83624; text-decoration: none;padding: 5px 0px;display: block;}
+#topmenu a.current {border-bottom: 3px solid #b25e51;}
+
+/* MAIN PART STYLE */
+.oneblock {background-color: #f5f5f5; position: relative; width:100%;min-width: 980px;}
+.content {width: 650px; padding-right: 310px; margin-left: -490px; position: absolute; left: 50%;}
+.content h2 {color: #a83624; font-size: 65px; margin: 60px 0px 0px 0px;font-family: Homebook;font-weight: normal;}
+.content h3 {color: #817f7f; font-size: 40px; margin: 0px 0px 40px 0px;font-family: Homebook;font-weight: normal;}
+#mission {position: absolute; top: 130px;height: 550px;}
+#mission table {margin: 50px 0;}
+#mission td.text {background: url (../images/listb.png) no-repeat 0 10px; font-size: 20px; color: #929292;}
+#mission td.bullet {vertical-align: top;width: 30px;}
+.button {border: 2px solid #c4c4c4; border-radius: 5px; padding: 11px 65px; position: relative;font-size: 20px;float: left;cursor: pointer;z-index: 10;}
+.button a {color: black; text-decoration: none;}
+.button:hover {background-color: #b25e51;}
+#bike1 {height: 680px; width: 980px; position: absolute; left: 50%; margin-left: -490px; z-index: 0;}
+#bike1 img {position: absolute; left: 330px; top: -20px;}
+#whatwedo {position: absolute; top: 680px;height: 590px;min-width: 1060px;}
+#whatwedo .content h2 {margin-top: 20px;}
+#whatwedo .content h3 {margin-bottom: 0px;}
+#bike2 {height: 456px; width: 1011px; position: absolute;}
+.bikebutton {height: 44px; width: 44px; position: absolute;cursor: pointer;z-index: 80;}
+.bikebutton img {height: 44px; width: 44px;}
+#bb1 {top: 160px; left: 120px;}
+#bb1.big {top: 157px; left: 107px;}
+#bb2 {top: 300px; left: 300px;}
+#bb2.big {top: 297px; left: 287px;}
+#bb3 {top: 100px; left: 450px;}
+#bb3.big {top: 97px; left: 437px;}
+#bb4 {top: 230px; left: 550px;}
+#bb4.big {top: 227px; left: 537px;}
+#bb5 {top: 80px; left: 745px;}
+#bb5.big {top: 77px;left: 732px;}
+.bikebubble {background-color: #ca5e50; border-radius: 5px;position: absolute;display: none;z-index: 90;}
+.bikebubble a {display: block; float: left; margin: 20px;}
+.bikebubble img {position: absolute;top: -35px;left: 50%;margin-left: -35px;height: 50px; width: 70px;}
+#bb1b { top: 192px; left: 40px;}
+#bb2b { top: 332px; left: 233px;}
+#bb3b { top: 132px; left: 352px;}
+#bb4b { top: 262px; left: 415px;}
+#bb5b { top: 112px; left: 555px;}
+.bikebubble a {color: white; font-family: Homebook; font-size: 30px;}
+.popup {background-color: #ca5e50; width: 656px; position: absolute; left: 162px; top: 70px; z-index: 150;display: none;}
+.popup img {position: absolute;top: -35px;left: 50%;margin-left: -35px;height: 50px; width: 70px;cursor: pointer;}
+.popup .title {height: 56px; width: 566px; text-align: center; padding-top: 30px; margin: 0 45px; color: white; font-size: 32px;border-bottom: 1px solid #c4c4c4;}
+.popup .text {width: 566px;color: white;font-size: 25px; padding: 25px 45px 40px;line-height: 30px;}
+#fpop {left: 50%;margin-left: -328px;top: 200px;z-index: 1002;}
+.vacancy {display: block; width: 566px; padding: 20px 0; border-bottom: 1px dashed #d7978c;}
+.vacancy.last {border: 0;}
+.vacancy-name {float: left; font-size: 25px;}
+.vacancy-more {float: right; font-size: 15px;}
+.hrmail {width: 566px; padding-top: 30px; border-top: 1px solid #c4c4c4; text-align: center;}
+#contacts {background: url(../images/map.png) no-repeat transparent top center;height: 815px;position: absolute; top: 1280px;}
+.position {background: url(../images/redround.png) no-repeat transparent 575px 40px; width: 1000px; position: absolute; top: 0; height: 490px;}
+.position img {position: relative; left: 710px;top: 180px;}
+.divider1 {position: absolute;height: 88px;z-index: 10;margin-left: -490px;left: 50%;background: url(../images/divider1.png) no-repeat transparent top center;width: 980px;top: 505px;}
+#whatwedo .divider1 {top: 555px;}
+.divider1 .divbut {width: 88px; height: 88px; position: absolute; left: 446px; cursor: pointer;}
+.divider2 {position: absolute;height: 40px;z-index: 10;margin-left: -490px;left: 50%;background: url(../images/divider2.png) no-repeat transparent top center;width: 980px;top: -20px;}
+.divider2 .divbutsmall {width: 40px; height: 40px; position: absolute; left: 470px; cursor: pointer;}
+
+/* FOOTER STYLE */
+footer {text-align: center; padding: 95px 0px; width: 980px; position: absolute;top: 490px;left: 50%;margin-left: -490px;}
+#whiteshadow {position: absolute;top: 0;height: 100%;width: 100%;background-color: white;z-index: 1001;opacity: 0.5;display: none;}
