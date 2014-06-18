@@ -25,9 +25,12 @@ header {height: 125px; border-top: 5px solid #b25e51; width: 100%;position: fixe
 #mission table {margin: 50px 0;}
 #mission td.text {background: url (../images/listb.png) no-repeat 0 10px; font-size: 20px; color: #929292;}
 #mission td.bullet {vertical-align: top;width: 30px;}
-.button {border: 2px solid #c4c4c4; border-radius: 5px; padding: 11px 65px; position: relative;font-size: 20px;float: left;cursor: pointer;z-index: 10;}
-.button a {color: black; text-decoration: none;}
+
+.button {border: 2px solid #c4c4c4; border-radius: 5px; padding: 1px 20px; position: relative;font-size: 20px;float: left;cursor: pointer;z-index: 10;}
+.button a {color: black; text-decoration: none; padding: 15px 5px; text-align: center}
 .button:hover {background-color: #b25e51;}
+
+
 #bike1 {height: 680px; width: 980px; position: absolute; left: 50%; margin-left: -490px; z-index: 0;}
 #bike1 img {position: absolute; left: 330px; top: -20px;}
 #whatwedo {position: absolute; top: 680px;height: 590px;min-width: 1060px;}
@@ -77,3 +80,11 @@ header {height: 125px; border-top: 5px solid #b25e51; width: 100%;position: fixe
 /* FOOTER STYLE */
 footer {text-align: center; padding: 95px 0px; width: 980px; position: absolute;top: 490px;left: 50%;margin-left: -490px;}
 #whiteshadow {position: absolute;top: 0;height: 100%;width: 100%;background-color: white;z-index: 1001;opacity: 0.5;display: none;}
+
+/* FIX STYLE */
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
