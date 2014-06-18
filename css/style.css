@@ -31,8 +31,8 @@ header {height: 125px; border-top: 5px solid #b25e51; width: 100%;position: fixe
 .button:hover {background-color: #b25e51;}
 
 
-#bike1 {height: 680px; width: 980px; position: absolute; left: 50%; margin-left: -490px; z-index: 0;}
-#bike1 img {position: absolute; left: 330px; top: -20px;}
+#bike1 {height: 680px; width: 980px; position: absolute; left: 50%; margin-left: -400px; margin-top: 20px; z-index: 0;}
+#bike1 img {position: absolute; left: 500px; top: -10px;}
 #whatwedo {position: absolute; top: 680px;height: 590px;min-width: 1060px;}
 #whatwedo .content h2 {margin-top: 20px;}
 #whatwedo .content h3 {margin-bottom: 0px;}
