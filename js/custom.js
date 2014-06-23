@@ -62,7 +62,7 @@ $(document).ready(function($) {
 	$("#tod0").click(function(){
 		$.scrollTo(0,800, {offset: -130});
 	});
-	/*
+	/*/*
 	$("footer a").click(function(){
 		$.scrollTo("#mission",800, {offset: -130});
 		return false;
