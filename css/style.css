@@ -7,19 +7,15 @@ body {background-color: #f5f5f5;padding: 0;margin: 0;height: 100%; font-family: 
 }
 
 /* HEADER STYLE */
-header {height: 125px; border-top: 5px solid #b25e51; width: 100%;position: fixed;top: 0;background-color: #f5f5f5;z-index: 1000;}
-/*
-#mainheader {height: 55px; width: 960px; padding-top: 70px; margin: 0 auto; border-bottom: 1px solid #e1e1e1;}
-#logo {float: left; width: 480px;}
-*/
-#mainheader {height: 55px; width: 960px; padding-top: 70px; margin: 0 auto; border-bottom: 1px solid #e1e1e1;}
-#logo {float: left; width: 480px; margin-top: -50px;}
+header {height: 22.21%; /*125px 1024px*/ border-top: 1% /*5px 1024*/ solid #b25e51; width: 100%;position: fixed;top: 0;background-color: #f5f5f5;z-index: 1000;}
 
-#topmenu {float: right; width: 480px;}
-#topmenu ul{float: right;margin: 0; padding: 0;}
-#topmenu ul li {float: left; list-style: none; margin: 0px 15px; font-size: 22px; color: #a83624; border: 0;}
-#topmenu a {color: #a83624; text-decoration: none;padding: 5px 0px;display: block;}
-#topmenu a.current {border-bottom: 3px solid #b25e51;}
+#mainheader {height: 100%; width: 75%; /*960px 1280px*/ /*padding-top: 6.84%;/*70px 1024px*/ margin: 0 auto; border-bottom: 1px solid #e1e1e1;}
+#logo {float: left; width: 40%;/*480px 960px*/ /*margin-top: -4.88%/*50px 1024px*/}
+
+#topmenu {float: right; width: 60%; /*480px 960px*/}
+#topmenu ul{float: right; /*margin: 0; padding: 0;*/}
+#topmenu ul li {float: left; list-style: none; margin: 0% 30%; /*15px 1024px*/ font-size: 1.6em;/*22px;*/ color: #a83624; border: 0;}
+
 
 /* MAIN PART STYLE */
 .oneblock {background-color: #f5f5f5; position: relative; width:100%;min-width: 980px;}
