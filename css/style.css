@@ -7,13 +7,15 @@ body {background-color: #f5f5f5;padding: 0;margin: 0;height: 100%; font-family: 
 }
 
 /* HEADER STYLE */
-header {height: 22.21%; /*125px 1024px*/ border-top: 1% /*5px 1024*/ solid #b25e51; width: 100%;position: fixed;top: 0;background-color: #f5f5f5;z-index: 1000;}
 
+@media screen and (min-width: 768px) {
+	
+	header {height: 15%; /*125px 1024px*/ border-top: 5px /*5px 1024*/ solid #b25e51; width: 100%;position: fixed;top: 0;background-color: #f5f5f5;z-index: 1000;}
+}
 #mainheader {height: 100%; width: 75%; /*960px 1280px*/ /*padding-top: 6.84%;/*70px 1024px*/ margin: 0 auto; border-bottom: 1px solid #e1e1e1;}
 
 #logo {float: left; width: 40%;}
 img {max-width: 100%;}
-
 
 #topmenu ul{float: right; 	padding: 1.2em 1em 1em;}
 #topmenu ul li {
@@ -21,13 +23,23 @@ img {max-width: 100%;}
 	font-size: 1.6em;
 	color: #a83624; 
 	border: 0;
-	margin: 0 1em;
+	margin: 0 5px;
 	}
 #topmenu a {color: #a83624; text-decoration: none;padding: 5px 0px;}
 #topmenu a.current {border-bottom: 3px solid #b25e51;}
 
 
 @media screen and (max-width: 768px) {
+	#header {
+
+
+		
+	}
+	
+	#logo {
+		width:100%;
+	}
+	
 	#mainheader {
 		position:relative;
 		margin:10px;
@@ -47,12 +59,13 @@ img {max-width: 100%;}
 		*/
 		float:left;
 		width:100%;
+
 	}
-	
+	/*
 	#topmenu ul li {
 		clear: left;
 		float:left;
-		width:48%;
+
 	}
 	
 	
@@ -60,17 +73,18 @@ img {max-width: 100%;}
 	li#nav-whatwedo,
 	li#nav-contacts {
 		clear:right;
-		float::right;
+		float:right;
 	}
+	*/
 }
 
 /* MAIN PART STYLE */
-.oneblock {background-color: #f5f5f5; position: relative; width:100%;min-width: 980px;}
-.content {width: 650px; padding-right: 310px; margin-left: -490px; position: absolute; left: 50%;}
+.oneblock {background-color: #f5f5f5; /*position: relative;*/ width:100%;/*min-width: 980px;*/}
+.content {/*width: 67.71%;/*650px; 960px;*//* padding-right: 30.27%;/*310px; 1024px;*//* margin-left: -47.85%; /*-490px;  1024px;*/ /*position: absolute;*/ /*left: 50%;*/}
 .content h2 {color: #a83624; font-size: 65px; margin: 60px 0px 0px 0px;font-family: Homebook;font-weight: normal;}
 .content h3 {color: #817f7f; font-size: 40px; margin: 0px 0px 40px 0px;font-family: Homebook;font-weight: normal;}
-#mission {position: absolute; top: 130px;height: 550px;}
-#mission table {margin: 50px 0;}
+
+#mission table {/*margin: 50px 0;*/}
 #mission td.text {background: url (../images/listb.png) no-repeat 0 10px; font-size: 20px; color: #929292;}
 #mission td.bullet {vertical-align: top;width: 30px;}
 
