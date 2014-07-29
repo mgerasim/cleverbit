@@ -28,8 +28,8 @@ table { border-collapse:collapse;border-spacing:0; }
 #mainheader {
 	/*height: 100%; */
 	width: 75%; /*960px 1280px*/ /*padding-top: 6.84%;/*70px 1024px*/ 
-	margin: 36px auto; 
-	border-bottom: 3px solid #e1e1e1;
+	margin: 0 auto; 
+	border-bottom: 1px solid #e1e1e1;
 
 	
 	
