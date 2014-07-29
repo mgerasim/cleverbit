@@ -180,7 +180,10 @@ padding: 0.8em 0.1em 0.1em;
 
 
 
-#contacts {background: url(../images/map.png) no-repeat transparent top center;height: 815px;position: absolute; top: 1280px;}
+#contacts {
+	background: url(../images/map.png) no-repeat transparent top center;
+	/*height: 815px;position: absolute; top: 1280px;*/
+	}
 .position {background: url(../images/redround.png) no-repeat transparent 575px 40px; width: 1000px; position: absolute; top: 0; height: 490px;}
 .position img {position: relative; left: 710px;top: 180px;}
 .divider1 {
@@ -219,8 +222,19 @@ padding: 0.8em 0.1em 0.1em;
 	cursor: pointer;}
 
 /* FOOTER STYLE */
-footer {text-align: center; padding: 95px 0px; width: 980px; position: absolute;top: 490px;left: 50%;margin-left: -490px;}
-#whiteshadow {position: absolute;top: 0;height: 100%;width: 100%;background-color: white;z-index: 1001;opacity: 0.5;display: none;}
+footer {
+	/*text-align: center; */
+	/*
+	padding: 95px 0px; 
+	position: absolute;top: 490px;left: 50%;margin-left: -490px;	
+	width: 980px; 
+	*/
+	width: 100%;
+	margin: 0 auto;
+	}
+#whiteshadow {
+	/*position: absolute;top: 0;height: 100%;width: 100%;background-color: white;z-index: 1001;opacity: 0.5;display: none;
+	}
 
 /* FIX STYLE */
 a.fill-div {
