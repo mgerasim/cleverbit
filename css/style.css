@@ -1,23 +1,53 @@
+
 html { height: 100%; font-family: Homebook;} 
 body {background-color: #f5f5f5;padding: 0;margin: 0;height: 100%; font-family: Homebook;}
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,time,mark,audio,video { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; } 
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
 .clearfix {height 1px; clear: both;}
 @font-face {
     font-family: Homebook;
     src: url(../fonts/PFHandbookPro-Light.otf);
 }
 
+
+
 /* HEADER STYLE */
 
-@media screen and (min-width: 768px) {
 	
-	header {height: 15%; /*125px 1024px*/ border-top: 5px /*5px 1024*/ solid #b25e51; width: 100%;position: fixed;top: 0;background-color: #f5f5f5;z-index: 1000;}
-}
-#mainheader {height: 100%; width: 75%; /*960px 1280px*/ /*padding-top: 6.84%;/*70px 1024px*/ margin: 0 auto; border-bottom: 1px solid #e1e1e1;}
+/*	header {height: 15%;  border-top: 5px  solid #b25e51; width: 100%;position: fixed;top: 0;background-color: #f5f5f5;z-index: 1000;}*/
 
-#logo {float: left; width: 40%;}
+#mainheader {
+	/*height: 100%; */
+	width: 75%; /*960px 1280px*/ /*padding-top: 6.84%;/*70px 1024px*/ 
+	margin: 36px auto; 
+	border-bottom: 3px solid #e1e1e1;
+	position: relative;
+	z-index: 100;
+}
+
+#logo {
+	float: left; 
+	width: 40%;
+}
+img {
+	display:block;
+}
 img {max-width: 100%;}
 
-#topmenu ul{float: right; 	padding: 1.2em 1em 1em;}
+#topmenu{
+	width:60%;
+	float:right;
+}
+
+#topmenu ul{float: right; 	padding: 0.8em 0.1em 0.1em;}
 #topmenu ul li {
 		display: inline;
 	font-size: 1.6em;
@@ -25,40 +55,81 @@ img {max-width: 100%;}
 	border: 0;
 	margin: 0 5px;
 	}
-#topmenu a {color: #a83624; text-decoration: none;padding: 5px 0px;}
+#topmenu a {
+	color: #a83624; 
+	text-decoration: none;
+/*	padding: 1.2em 1em 1em;*/
+padding: 0.8em 0.1em 0.1em;
+	position: relative;
+	z-index: 1;}
+	
 #topmenu a.current {border-bottom: 3px solid #b25e51;}
 
 
 @media screen and (max-width: 768px) {
-	#header {
-
-
-		
-	}
-	
-	#logo {
-		width:100%;
-	}
-	
 	#mainheader {
-		position:relative;
-		margin:10px;
-		width:auto;
+		position: relative;
+		margin: 20px;
+		width: auto;
 	}
+	
+	
+	
 	
 	#logo {
 		float: none;
 		margin: 0 auto 20px;
 		position:relative;
-		width: 90%;
 	}
 	#topmenu ul {
-		
-		float:left;
-		width:100%;
+		padding: 1.2em 0 1em;
+		margin-bottom: 20px;
+		top: auto;
+		text-align: center;
 
+	}		
+}
+
+@media screen and (max-width: 520px) {
+	#topmenu ul {
+		float: left;
+		width: 100%;
+	}
+	#topmenu ul li {
+		clear: left;
+		float: left;
+	}
+	/*li#nav-rated,
+	li#nav-contact {
+		clear: right;
+		float: right;
+	}*/
+	.nav-primary a {
+		display: block;
+		padding: 0.45em;
 	}
 }
+
+
+@media screen and (max-width: 480px) {
+	#topmenu {
+		float:none;
+		width:100%;
+	}
+	#logo {
+		width: 90%;					
+	}
+}
+
+/*
+	Tinier
+*/
+@media screen and (max-width: 360px) {
+	#mainheader{
+		margin: 20px 10px;
+	}
+}
+
 
 /* MAIN PART STYLE */
 .oneblock {background-color: #f5f5f5; /*position: relative;*/ width:100%;/*min-width: 980px;*/}
