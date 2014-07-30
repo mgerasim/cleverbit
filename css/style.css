@@ -81,20 +81,19 @@ padding: 0.8em 0.1em 0.1em;
 
 @media screen and (max-width: 768px) {
 	#mainheader {
-		margin: 20px;
+	/*	margin: 20px;*/
 		width: auto;
 		
-	}
-	
-	
-	
+	}	
 	
 	#logo {
 		float: none;
-		margin: 0 auto 20px;
+		margin: 0 auto;
 		position:relative;
+		width:100%;
 	}
 	#topmenu ul {
+		
 		padding: 1.2em 0 1em;
 		margin-bottom: 20px;
 		top: auto;
@@ -104,19 +103,21 @@ padding: 0.8em 0.1em 0.1em;
 }
 
 @media screen and (max-width: 520px) {
+	
+	#page{
+		width:90%;
+	}
+	
 	#topmenu ul {
-		float: left;
+		
+		padding: 1.2em 0 1em;
+		margin-bottom: 20px;
+		top: auto;
+		text-align: center;
+	float: left;
 		width: 100%;
-	}
-	#topmenu ul li {
-		clear: left;
-		float: left;
-	}
-	/*li#nav-rated,
-	li#nav-contact {
-		clear: right;
-		float: right;
-	}*/
+
+	}		
 	.nav-primary a {
 		display: block;
 		padding: 0.45em;
