@@ -1,0 +1,251 @@
+/*
+ * # Semantic - textarea
+ * http://github.com/jlukic/semantic-ui/
+ *
+ *
+ * Copyright 2013 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+/*******************************
+           Standard
+*******************************/
+/*--------------------
+        textareas
+---------------------*/
+.ui.textarea {
+  display: inline-block;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+}
+.ui.textarea textarea {
+  width: 100%;
+  font-family: "Helvetica Neue", "Helvetica", Arial;
+  margin: 0em;
+  padding: 0.65em 1em;
+  font-size: 1em;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.3125em;
+  -webkit-transition: background-color 0.3s ease-out, -webkit-box-shadow 0.2s ease, border-color 0.2s ease;
+  -moz-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*--------------------
+      Placeholder
+---------------------*/
+/* browsers require these rules separate */
+.ui.textarea::-webkit-textarea-placeholder {
+  color: #BBBBBB;
+}
+.ui.textarea::-moz-placeholder {
+  color: #BBBBBB;
+}
+/*******************************
+            States
+*******************************/
+/*--------------------
+        Active
+---------------------*/
+.ui.textarea textarea:active,
+.ui.textarea.down textarea {
+  border-color: rgba(0, 0, 0, 0.3);
+  background-color: #FAFAFA;
+}
+/*--------------------
+        Loading
+---------------------*/
+.ui.loading.textarea > .icon {
+  background: url(../images/loader-mini.gif) no-repeat 50% 50%;
+}
+.ui.loading.textarea > .icon:before,
+.ui.loading.textarea > .icon:after {
+  display: none;
+}
+/*--------------------
+        Focus
+---------------------*/
+.ui.textarea.focus textarea,
+.ui.textarea textarea:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.85);
+}
+.ui.textarea.focus textarea textarea::-webkit-textarea-placeholder,
+.ui.textarea textarea:focus textarea::-webkit-textarea-placeholder {
+  color: #AAAAAA;
+}
+.ui.textarea.focus textarea textarea::-moz-placeholder,
+.ui.textarea textarea:focus textarea::-moz-placeholder {
+  color: #AAAAAA;
+}
+/*--------------------
+        Error
+---------------------*/
+.ui.textarea.error textarea {
+  background-color: #FFFAFA;
+  border-color: #E7BEBE;
+  color: #D95C5C;
+}
+/* Error Placeholder */
+.ui.textarea.error textarea ::-webkit-textarea-placeholder {
+  color: rgba(255, 80, 80, 0.4);
+}
+.ui.textarea.error textarea ::-moz-placeholder {
+  color: rgba(255, 80, 80, 0.4);
+}
+.ui.textarea.error textarea :focus::-webkit-textarea-placeholder {
+  color: rgba(255, 80, 80, 0.7);
+}
+.ui.textarea.error textarea :focus::-moz-placeholder {
+  color: rgba(255, 80, 80, 0.7);
+}
+/*******************************
+           Variations
+*******************************/
+/*--------------------
+      Transparent
+---------------------*/
+.ui.transparent.textarea textarea {
+  border: none;
+  background-color: transparent;
+}
+/*--------------------
+         Icon
+---------------------*/
+.ui.icon.textarea > .icon {
+  cursor: default;
+  position: absolute;
+  opacity: 0.5;
+  top: 0px;
+  right: 0px;
+  margin: 0em;
+  width: 2.6em;
+  height: 100%;
+  padding-top: 0.82em;
+  text-align: center;
+  border-radius: 0em 0.3125em 0.3125em 0em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+.ui.icon.textarea > .link.icon {
+  cursor: pointer;
+}
+.ui.icon.textarea textarea {
+  padding-right: 3em !important;
+}
+.ui.icon.textarea > .circular.icon {
+  top: 0.35em;
+  right: 0.5em;
+}
+/* Left Side */
+.ui.left.icon.textarea > .icon {
+  right: auto;
+  left: 1px;
+  border-radius: 0.3125em 0em 0em 0.3125em;
+}
+.ui.left.icon.textarea > .circular.icon {
+  right: auto;
+  left: 0.5em;
+}
+.ui.left.icon.textarea > textarea {
+  padding-left: 3em !important;
+  padding-right: 1.2em !important;
+}
+/* Focus */
+.ui.icon.textarea > textarea:focus ~ .icon {
+  opacity: 1;
+}
+/*--------------------
+        Labeled
+---------------------*/
+.ui.labeled.textarea .corner.label {
+  font-size: 0.7em;
+  border-radius: 0 0.3125em;
+}
+.ui.labeled.textarea .left.corner.label {
+  border-radius: 0.3125em 0;
+}
+.ui.labeled.textarea textarea {
+  padding-right: 2.5em !important;
+}
+/* Spacing with corner label */
+.ui.labeled.icon.textarea:not(.left) > textarea {
+  padding-right: 3.25em !important;
+}
+.ui.labeled.icon.textarea:not(.left) > .icon {
+  margin-right: 1.25em;
+}
+/*--------------------
+        Action
+---------------------*/
+.ui.action.textarea {
+  display: table;
+}
+.ui.action.textarea > textarea {
+  display: table-cell;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-right: none;
+}
+.ui.action.textarea > .button,
+.ui.action.textarea > .buttons {
+  display: table-cell;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  white-space: nowrap;
+}
+.ui.action.textarea > .button > .icon,
+.ui.action.textarea > .buttons > .button > .icon {
+  display: inline;
+  vertical-align: top;
+}
+.ui.fluid.action.textarea {
+  display: table;
+  width: 100%;
+}
+.ui.fluid.action.textarea > .button {
+  width: 0.01%;
+}
+/*--------------------
+        Fluid
+---------------------*/
+.ui.fluid.textarea {
+  display: block;
+}
+/*--------------------
+        Size
+---------------------*/
+.ui.mini.textarea {
+  font-size: 0.8125em;
+}
+.ui.small.textarea {
+  font-size: 0.875em;
+}
+.ui.textarea {
+  font-size: 1em;
+}
+.ui.large.textarea {
+  font-size: 1.125em;
+}
+.ui.big.textarea {
+  font-size: 1.25em;
+}
+.ui.huge.textarea {
+  font-size: 1.375em;
+}
+.ui.massive.textarea {
+  font-size: 1.5em;
+}
