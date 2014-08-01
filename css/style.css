@@ -227,6 +227,15 @@ a{
 	color: #a83624; 
 }
 
+
+.field_form .input{
+	width:50%;
+}
+
+.field_form .textarea{
+	width:100%;
+}
+
 /* FIX CB0004 */
 p {
     -moz-hyphens: auto;
@@ -235,3 +244,4 @@ p {
     hyphens: auto;
 }
 
+*/
