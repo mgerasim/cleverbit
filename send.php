@@ -6,7 +6,8 @@
 
     //определение переданных значений от формы заказа, их можно добавить при необходимости
     
-    $send_name=$_POST["name"];
+    //$send_name=$_POST["name"];
+	$send_name=$_REQUEST['name'];
 	$send_email=$_POST["email"];;    
     $send_komment=$_POST["text"];
 
@@ -17,11 +18,7 @@
 
 
     //ниже отображено тело письма, которое придет на указанные адреса почты
-    $send_mail_text = "    
-    $_REQUEST['name']
-    $_REQUEST['email']
-    $_REQUEST['message'] 
-
+    $send_mail_text = "        
 	ФИО заказчика - $send_name
     Емайл заказчика - $send_email    
     Пожелание покупателя - $send_komment " ;
