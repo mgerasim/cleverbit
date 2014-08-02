@@ -35,14 +35,25 @@
 <script type="text/javascript" src="js/custom.js"></script>7
 -->
 
-<script src="http://malsup.github.com/jquery.form.js"></script> 
-<script> 
-    $(document).ready(function() { 
-        $('#feedback_form').ajaxForm(function() { 
-           alert('form was submitted');
-        }); 
-    }); 
-</script> 
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+      $(function () {
+        $('#feedback_form').bind('click', function (event) {
+
+event.preventDefault();// using this page stop being refreshing 
+
+          $.ajax({
+            type: 'POST',
+            url: 'send.php',
+            data: $('form').serialize(),
+            success: function () {
+              alert('form was submitted');
+            }
+          });
+
+        });
+      });
+    </script>
 
 </head>
 <body>
