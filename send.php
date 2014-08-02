@@ -5,28 +5,19 @@
     $send_mail_subject = "C вашего сайта testsite.test был сделан заказ на ".$HTTP_POST_VARS['tovar'].""; // Тема письма, в которой будет отображено название заказанного товара
 
     //определение переданных значений от формы заказа, их можно добавить при необходимости
-    $send_tovar=$HTTP_POST_VARS['tovar'];
+    
     $send_name=$HTTP_POST_VARS['name'];
-    $send_phone=$HTTP_POST_VARS['phone'];
-	$send_email=$HTTP_POST_VARS['email'];;
-    $send_sity=$HTTP_POST_VARS['sity'];
-    $send_index=$HTTP_POST_VARS['index'];
-    $send_adress=$HTTP_POST_VARS['adress'];
-    $send_komment=$HTTP_POST_VARS['komment'];
+	$send_email=$HTTP_POST_VARS['email'];;    
+    $send_komment=$HTTP_POST_VARS['text'];
 
 
 
 
 
     //ниже отображено тело письма, которое придет на указанные адреса почты
-    $send_mail_text = "
-    Товар - $send_tovar
+    $send_mail_text = "    
     ФИО заказчика - $send_name
-    Телефон заказчика - $send_phone
-    Емайл заказчика - $send_email
-    Город доставки - $send_sity
-    Почтовый индекс покупателя - $send_index
-    Адресс доставки - $send_adress
+    Емайл заказчика - $send_email    
     Пожелание покупателя - $send_komment " ;
     //Ковычки и Точка с запятой в конце тела письма обязательны!!!
 
