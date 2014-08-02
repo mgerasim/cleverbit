@@ -6,9 +6,9 @@
 
     //определение переданных значений от формы заказа, их можно добавить при необходимости
     
-    $send_name=$HTTP_POST_VARS['name'];
-	$send_email=$HTTP_POST_VARS['email'];;    
-    $send_komment=$HTTP_POST_VARS['text'];
+    $send_name=$_POST['name'];
+	$send_email=$_POST['email'];;    
+    $send_komment=$_POST['text'];
 
 
 
