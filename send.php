@@ -8,7 +8,6 @@
     $send_tovar=$HTTP_POST_VARS['tovar'];
     $send_name=$HTTP_POST_VARS['name'];
     $send_phone=$HTTP_POST_VARS['phone'];;
-    $send_e.mail=$HTTP_POST_VARS['e.mail'];
     $send_sity=$HTTP_POST_VARS['sity'];
     $send_index=$HTTP_POST_VARS['index'];
     $send_adress=$HTTP_POST_VARS['adress'];
