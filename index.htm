@@ -38,7 +38,7 @@
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
     <script>
       $(function () {
-        $('#feedback_form').bind('click', function (event) {
+        $('#feedback_submit').bind('click', function (event) {
 
 event.preventDefault();// using this page stop being refreshing 
 
@@ -133,7 +133,7 @@ event.preventDefault();// using this page stop being refreshing
                         <div class="clearfix"></div>
                         
                         
-                        <form id="feedback_form" action="send.php" method="post">
+                        <form action="send.php" method="post">
                                 <div id="feedback_form">
                                     <fieldset>
                                         <legend>
@@ -173,7 +173,7 @@ event.preventDefault();// using this page stop being refreshing
                                 
                                 <div class="clearfix"></div>
                                                                 
-                                <button type="submit" class="button">Отправить</button>
+                                <button id="feedback_submit" type="submit" class="button">Отправить</button>
                          </form>
                         
 
