@@ -35,6 +35,15 @@
 <script type="text/javascript" src="js/custom.js"></script>7
 -->
 
+<script src="http://malsup.github.com/jquery.form.js"></script> 
+<script> 
+    $(document).ready(function() { 
+        $('#feedback_form').ajaxForm(function() { 
+           alert('form was submitted');
+        }); 
+    }); 
+</script> 
+
 </head>
 <body>
 	<div id="site">
@@ -113,7 +122,7 @@
                         <div class="clearfix"></div>
                         
                         
-                        <form action="send.php" method="post">
+                        <form id="feedback_form" action="send.php" method="post">
                                 <div id="feedback_form">
                                     <fieldset>
                                         <legend>
