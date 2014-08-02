@@ -7,7 +7,8 @@
     //определение переданных значений от формы заказа, их можно добавить при необходимости
     $send_tovar=$HTTP_POST_VARS['tovar'];
     $send_name=$HTTP_POST_VARS['name'];
-    $send_phone=$HTTP_POST_VARS['phone'];;
+    $send_phone=$HTTP_POST_VARS['phone'];
+	$send_email=$HTTP_POST_VARS['email'];;
     $send_sity=$HTTP_POST_VARS['sity'];
     $send_index=$HTTP_POST_VARS['index'];
     $send_adress=$HTTP_POST_VARS['adress'];
@@ -22,7 +23,7 @@
     Товар - $send_tovar
     ФИО заказчика - $send_name
     Телефон заказчика - $send_phone
-    Емайл заказчика - $send_e.mail
+    Емайл заказчика - $send_email
     Город доставки - $send_sity
     Почтовый индекс покупателя - $send_index
     Адресс доставки - $send_adress
