@@ -32,8 +32,8 @@
     // отправка письма с определенными значениями
     mail("$e_mail", "$send_mail_subject", "$send_mail_text");
 
-    }
-    }
+    
+    
     ?>
 
 
