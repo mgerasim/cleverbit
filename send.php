@@ -1,10 +1,7 @@
     <?php
 
-	$vars = get_defined_vars();
-foreach ($vars as $var) {
-     echo "<br><b>{$var}</b>";
-     var_dump($$var);
-}
+	foreach($_POST as $a=>$b) echo "{$a}={$b}<br />";
+	
 	
     $e_mail = 'mgerasim.mail@gmail.com'; // Здесь необходимо прописать адрес, куда будет отправлено письмо (можно несколько через запятую)
 
